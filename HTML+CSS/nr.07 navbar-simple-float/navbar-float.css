@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-color: #333;
+    font-family: Arial;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.navbar {
+    background-color: #222;
+}
+.fix {
+    clear: both;
+}
+.navbar>ul.branding {
+    margin-right: 100px;
+    margin-left: 50px;
+}
+.navbar>ul.branding,
+.navbar>ul.main
+{
+    float: left;
+}
+.navbar>ul.client {
+    float: right;
+    margin-right: 50px;
+}
+.navbar>ul>li {
+    float: left;
+    padding: 15px 10px;
+}
+.navbar>ul>li>a {
+    color: wheat;
+}
