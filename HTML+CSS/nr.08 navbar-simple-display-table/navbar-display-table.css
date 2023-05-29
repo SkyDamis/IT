@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background-color: #333;
+    font-family: Arial;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #222;
+    font-size: 25px;
+    display: table;
+    width: 100%;
+}
+
+.navbar a {
+    color: wheat;
+}
+.navbar .row {
+    display: table-row;
+}
+.navbar ul {
+    display: table-cell;
+    vertical-align: middle;
+}
+.navbar li {
+    display: table-cell;
+    padding: 20px 10px;
+    vertical-align: middle;
+}
+.navbar ul.branding {
+    padding-left: 50px;
+    padding-right: 100px;
+}
+.navbar ul.client {
+    text-align: right;
+}
+.navbar ul.branding li:first-child {
+    font-size: 40px;
+}
