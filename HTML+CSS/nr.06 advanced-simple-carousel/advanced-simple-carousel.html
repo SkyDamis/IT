@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two stage carousel | Advanced CSS Selectors</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+        .carousel {
+            width: 840px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            box-shadow: 0 0 10px 2px #111;
+        }
+        .carousel .slide {
+            width: 1800px;
+            transition: 1s;
+        }
+        .carousel .controls {
+            text-align: center;
+        }
+        .carousel .controls a {
+            color: wheat;
+            text-decoration: none;
+        }
+        .carousel #left:target .slide {
+            transform: translateX(0px);
+        }
+        .carousel #right:target .slide {
+            transform: translateX(-855px);
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <div id="left">
+            <div id="right">
+                <div class="slide">
+                    <img src="img/img1.jpg">
+                    <img src="img/img2.jpg">
+                    <img src="img/img3.jpg">
+                    <img src="img/img4.jpg">
+                    <img src="img/img5.jpg">
+                    <img src="img/img6.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <a href="#left">◀</a>
+            <a href="#right">▶</a>
+        </div>
+    </div>
+</body>
+</html>

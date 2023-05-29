@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Street block</title>
+    <style>
+        body {
+            background-color: #223;
+        }
+        .street {
+            border: 1px dotted red;
+        }
+        .house {
+            height: 150px;
+            width: 100px;
+            display: inline-block;
+        }
+        .tall-building {
+            display: inline-block;
+            height: 300px;
+            width: 100px;
+            background-color: beige;
+            margin-bottom: -37px;
+        }
+        .cloud {
+            height: 50px;
+            width: 250px;
+            font-size: 50px;
+            color: aqua;
+            display: inline-block;
+            transform: translateX(-100px);
+            vertical-align: top;
+        }
+        .small-building {
+            display: inline-block;
+            font-size: 70px;
+            vertical-align: bottom;
+            transform: translateY(10px);
+        }
+        .roof {
+            height: 0px;
+            width: 0px;
+            border: 50px solid white;
+            border-top-width: 0px;
+            border-bottom-color: brown;
+            border-bottom-width: 70px;
+            border-left-color: transparent;
+            border-right-color: transparent;
+        }
+        .wall {
+            background-color: antiquewhite;
+            height: 80px;
+        }
+        .window {
+            width: 30px;
+            height: 30px;
+            border: 2px solid brown;
+            transform: translateX(33px) translateY(23px);
+            
+        }
+        .section1{
+            border-bottom: 1px solid black;
+            transform: translateY(-3px);
+            color: transparent;
+        }
+        .section2{
+            border-right: 1px solid black;
+            padding: 7px;
+            transform: translateY(-20px) translateX(-15px);
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="street">
+        <div class="house">
+            <div class="roof"></div>
+            <div class="wall">
+                <div class="window">
+                    <div class="section1">s1</div>
+                    <div class="section2">s2</div>
+                </div>
+            </div>
+        </div>
+        <div class="tall-building">
+            
+        </div>
+        <div class="small-building">
+            🏠
+        </div>
+        <div class="cloud">☁ ☁ ☁ </div>
+    </div>
+</body>
+</html>

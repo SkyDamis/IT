@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Styling form</title>
+    <style>
+        #subscribe-form {
+            background-color: rgb(243, 178, 152);
+            padding: 10px;
+        }
+        .form-heading {
+            font-size: 25px;
+        }
+        .full-name {
+            margin-left: 26px;
+            font-size: 20px;
+        }
+        .phone-nr {
+            font-size: 20px;
+        }
+        .email {
+            font-size: 20px;
+            width: 400px;
+            padding-left: 30px;
+            background-image: url(at.svg);
+            background-repeat: no-repeat;
+        }
+        .button {
+            padding: 10px;
+            background-image: url(send\ icon.svg);
+            background-size: 35px;
+            background-repeat: no-repeat;
+            color: transparent;
+            background-position: center;
+            background-color: rgb(219, 39, 78);
+            border: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="Apply confirmation.html" id="subscribe-form">
+        <h1 align="center" class="form-heading">Apply for training</h1>
+        <fieldset>
+            <legend>Personal data</legend>
+            <i>Full name:</i> 
+            <input type="text" required placeholder="e.g.: Bruce Wayne" class="full-name"><br>
+            <i>Cell-phone nr.:</i> 
+            <input type="text" required placeholder="+373 999-99-999" class="phone-nr"><br>
+            <i>E-mail address</i>
+            <input type="text" required placeholder="bruce@example.com" class="email">
+        </fieldset>
+        <fieldset>
+            <legend>Course selection</legend>
+            <i>Training options:</i>
+            <select>
+                <option>Bronze</option>
+                <option>Silver</option>
+                <option>Gold</option>
+            </select>
+            <br>
+            <i>Training hours:</i> <br>
+            -Morning:
+            <select>
+                <option>7am-9am</option>
+                <option>9am-11am</option>
+            </select><br>
+            -Evening:
+            <select>
+                <option>5pm-7pm</option>
+                <option>7pm-9pm</option>
+            </select> <br>
+        </fieldset>
+        <b><i>I accept the <a href="terms.html" target="_blank">terms</a> and conditions</i></b>
+        <input type="checkbox" required>
+        <button class="button">ap</button>
+    </form>
+    </table>
+</body>
+
+</html>

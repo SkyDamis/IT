@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #222;
+        }
+        #imageEffects {
+            width: 400px;
+            height: 600px;
+            
+            margin: 250px;
+            border: 3px solid wheat;
+            background-image: url(edited\ image.jpg);
+        }
+        #imageEffects .slide {
+            width: 400px;
+            height: 300px;
+            border-bottom: 1px solid wheat;
+            background-image: url(image.jpg);
+        }
+        #imageEffects .slide a {
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: bolder;
+            color: bisque;
+            display: block;
+            transform: translateX(185px) translateY(271px);
+        }
+        #down:target .slide {
+            height: 600px;
+            transition: 5s;
+        }
+        #up:target .slide {
+            height: 0px;
+            transition: 5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="up">
+         <div id="down">
+            <div id="imageEffects">
+                <div class="slide">
+                    <a class="arrowup" href="#up">⟰</a>
+                    <a class="arrowdown" href="#down">⟱</a>
+                </div>
+            </div>
+         </div>
+    </div>
+</body>
+</html>

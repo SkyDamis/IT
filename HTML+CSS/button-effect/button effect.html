@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button Effect</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+        .button {
+            display: inline-block;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        .button a:hover {
+            background-color: plum;
+            color: purple;
+        }
+        .button a {
+            text-decoration: none;
+            padding: 10px 15px 7px 15px;
+            margin: 20px;
+            display: inline-block;
+            background-color: white;
+            border-radius: 50px;
+            color: #555;
+            box-shadow: 0 0 3px 1px black;
+        }
+        .button a::before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 30px;
+            height: 30px;
+            background-image: url(download.svg);
+            background-size: contain;
+            background-position: 0 -2px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button">
+        <a href="#">DOWNLOAD</a>
+    </div>
+</body>
+</html>

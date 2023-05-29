@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced cinema</title>
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+            font-family: Arial;
+        }
+        .cinema {
+            border: 1px dotted red;
+            padding: 10px;
+            text-align: center;
+        }
+        .cinema .vip span {
+            background-image: url(chair\ vip.png);
+            width: 72px;
+            height: 72px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .cinema .main span {
+            background-image: url(chair.png);
+            width: 72px;
+            height: 72px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .cinema .front span {
+            background-image: url(chair.png);
+            width: 72px;
+            height: 72px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .space {
+            margin-right: 72px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced Selectors <br> Cinema</h1>
+    <div class="cinema">
+        <div class="vip">
+            <h2>VIP</h2>
+            <div class="row">
+                <span>1</span><span>2<br><img src="male.png"></span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span>
+            </div>
+        </div>
+        <div class="main">
+            <h2>Main</h2>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span class="space">4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+            <div class="row"><span>1<br><img src="female.png"></span><span>2</span><span>3</span><span class="space">4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span class="space">4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+        </div>
+        <div class="front">
+            <h2>Front</h2>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Block</title>
+    <style>
+        body {
+            background-color: #222;
+        }
+        #city {
+            background-color: aliceblue;
+            width: 400px;
+            height: 400px;
+            border: 5px solid cadetblue;
+        }
+        #square {
+            background-color: darkgrey;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            margin-right: -4px;
+
+            font-size: 50px;
+            vertical-align: top;
+            text-align: center;
+            line-height: 150px;
+        }
+        .streetA {
+            background-color: gainsboro;
+            width: 250px;
+            height: 150px;
+            display: inline-block;
+        }
+        .top-band {
+            border-bottom: 2px dashed white;
+            width: inherit;
+            height: 34px;
+        }
+        .middle-band {
+            border-bottom: 2px solid white;
+            width: inherit;
+            height: 73px;
+        }
+        .bottom-band {
+            border-bottom: 2px dashed white;
+            width: inherit;
+            height: 110px;
+            color:transparent
+        }
+        .streetB {
+            background-color: #696969;
+            width: 150px;
+            height: 250px;
+            display: inline-block;
+            margin-top: -4px;
+            margin-right: -4px;
+        }
+        .left-band {
+            border-right: 1px solid white;
+            width: 73px;
+            height: inherit;
+        }
+        .left-left-band {
+            border-right: 2px dashed white;
+            width: 34px;
+            height: inherit;
+        }
+        .right-band {
+            border-right: 2px dashed white;
+            width: 110px;
+            height: inherit;
+        }
+        .park {
+            width: 250px;
+            height: 250px;
+            background-color: green;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: -4px;
+            font-size: 50px;
+            text-align: center;
+            line-height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="city">
+        <div id="square">
+            ♖
+        </div>
+        <div class="streetA">
+            <div class="top-band">
+                <div class="middle-band">
+                    <div class="bottom-band">                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="streetB">
+            <div class="left-band">
+                <div class="left-left-band">
+                    <div class="right-band">                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="park">
+            🌴 🌴 🌴 🌴 🌴 🌴 🌴 🌴 🌴
+        </div>
+    </div>
+</body>
+</html>

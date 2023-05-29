@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Directory Tree | pseudo selectors</title>
+    <style>
+        body {
+            background-color: #222;
+        }
+        .tree {
+            color: white;
+            font-family: Arial;
+            font-size: 64px;
+        }
+        .folder {
+            background-image: url(with\ docs.png);
+            background-repeat: no-repeat;
+            padding: 24px 0px 24px 72px;
+            line-height: 18px;
+            list-style-type: "\2520";          
+        }
+        .folder:hover {
+            opacity: 50%;
+            color: orange;
+        }
+        .file {
+            background-image: url(file.png);
+            background-repeat: no-repeat;
+            padding: 24px 0px 24px 72px;
+            line-height: 18px;
+            list-style-type: "\2520";          
+        }
+        .file:hover {
+            opacity: 50%;
+            color: orange;
+        }
+        .folder:last-child {
+            list-style-type: "┖";
+        }
+        .file:last-child {
+            list-style-type: "┖";
+        }
+        .name {
+            font-size: 18px;
+        }
+        .empty {
+            background-image: url(empty.png);
+        }
+    </style>
+</head>
+<body>
+    <ul class="tree">
+        <li class="folder">
+            <div class="name">project [DONE]</div>
+        </li>
+             <ul class="tree">
+                <li class="file"><div class="name">File 1</div></li>
+                <li class="file"><div class="name">File 2</div></li>
+             </ul>
+        <li class="folder">
+            <div class="name">project [NOW]</div>
+        </li>
+        <li class="folder empty">
+            <div class="name">project [TBD]</div>
+        </li>
+    </ul>
+</body>
+</html>

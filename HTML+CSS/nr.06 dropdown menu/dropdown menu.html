@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Advanced Selectors</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+        nav label {
+            cursor: pointer;
+            user-select: none;
+            background-color: #7c4e4e;
+            border-radius: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        nav label:hover {
+            background-color: rgb(180, 126, 59);
+        }
+        nav label::after {
+            content: "▼";
+        }
+        nav ul {
+            display: none;
+            background-color: #9e6464;
+            width: 60px;
+            opacity: 90%;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        nav input {
+            display: none;
+        }
+        nav input:checked+label+ul {
+            display: block;
+        }
+        nav input:checked+label::after {
+            content: "▲";
+        }
+        .item:hover {
+            background-color: rgb(235, 189, 232);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="toggler"/>
+        <label for="toggler">
+            Dropdown
+        </label>
+        <ul>
+            <li><a href="" class="item" style="color: black; text-decoration: none; "><b>item1</b></a></li>
+            <li><a href="" class="item" style="color: black; text-decoration: none;"><b>item2</b></a></li>
+            <li><a href="" class="item" style="color: black; text-decoration: none;"><b>item3</b></a></li>
+        </ul>
+    </nav>
+</body>
+</html>

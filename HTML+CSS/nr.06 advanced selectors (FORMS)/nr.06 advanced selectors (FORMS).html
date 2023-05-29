@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced selectors | Forms</title>
+    <style>
+        body {
+            background-color: #333;
+            font-family: Arial;
+        }
+        #subscribe-form {
+            color: wheat;
+        }
+        #subscribe-form label {
+            display: block;
+            padding: 5px;
+        }
+        #subscribe-form>label>input {
+            padding: 5px;
+            background-color: #ddd;
+            outline: none;
+            border: 1px solid #123;
+            border-radius: 5px;
+        }
+        #subscribe-form>label>input:focus {
+            background-color: #fff;
+        }
+        #subscribe-form>label>input:valid {
+            border-color: green;
+        }
+        #subscribe-form>label>input:invalid {
+            border-color: red;
+        }
+        #subscribe-form button {
+            background-color: #123;
+            border: none;
+            color: wheat;
+            padding: 10px 30px;
+        }
+        #subscribe-form span {
+            color: #89a;
+        }
+        #subscribe-form input:checked + span {
+            color: wheat;
+        }
+        #subscribe-form>div>label>input {
+            display: none;
+        }
+        #subscribe-form>div>label>input + span::before {
+            content: "◇";
+            padding-right: 5px;
+        }
+        #subscribe-form>div>label>input:checked + span::before {
+            content: "◈";
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="subscribe-form">
+        <h2>Subscribe</h2>
+        <label>
+            <input type="text" placeholder="Your full name" pattern="[A-z]" autofocus>
+        </label>
+        <label>
+            <input type="text" placeholder="Your phone number" pattern="373-[0-9]{3}-[0-9]{3}-[0-9]{3}">
+        </label>
+        <label>
+            <input type="text" placeholder="Your e-mail" pattern="">
+        </label>
+        <div>
+            <label>
+                <input type="checkbox"><span>Sport</span>
+            </label>
+            <label>
+                <input type="checkbox"><span>Science</span>
+            </label>
+            <label>
+                <input type="checkbox"><span>Cars</span>
+            </label>
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
