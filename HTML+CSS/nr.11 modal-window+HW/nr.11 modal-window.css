@@ -1,0 +1,131 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+    color: wheat;
+}
+#content{
+    width: 90%;
+    margin: 20% auto;
+}
+#content p{
+    text-align: justify;
+}
+#content .ad{
+    font-size: 150%;
+    margin: 5% 0;
+    text-align: right;
+}
+#content .ad a{    
+    padding: 1%;
+    text-decoration: none;
+    margin-left: 2%;
+}
+#modal{
+    background-color: rgb(164, 167, 155);
+    padding: 5%;
+    display: none;
+    position: fixed;
+    top: 30%;
+    bottom: 30%;
+    left: 25%;
+    right: 25%;
+    z-index: 1;
+    color: black;
+}
+#modal:target{
+    display: block;
+}
+#modal input{
+    padding: 3%;
+    width: 80%;
+}
+#button1 {
+    font-size: 30px;
+    background-color: rgb(193, 218, 106);
+    animation: button1 2s infinite;
+}
+#button1:hover {
+    background-color: rgb(28, 49, 70);
+    font-size: -10%;
+    color: goldenrod;
+}
+#modal button{
+    padding: 3%;
+    width: 86.5%;
+    animation: button2 2s infinite;
+}
+#modal button:hover {
+    padding: 3%;
+    width: 86.5%;
+    background-color: rgb(28, 49, 70);
+    font-size: -10%;
+    color: goldenrod;
+}
+#modal a{
+    color: wheat;
+    text-decoration: none;
+    font-size: 200%;
+    position: absolute;
+    right: 4%;
+    top: 2%;
+}
+
+#modal:target+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000A;
+}
+#input1{
+    margin-left: 13%;
+}
+#input3{
+    margin-left: 13%;
+}
+#x:hover{
+    color: red;
+}
+@keyframes button2 {
+    0% {
+        transform: translateX(-2px) translateY(-2px);
+    }
+
+    25% {
+        transform: translateX(2px) translateY(-2px);
+    }
+
+    50% {
+        transform: translateX(2px) translateY(2px);
+    }
+
+    75% {
+        transform: translateX(-2px) translateY(2px);
+    }
+
+    100% {
+        transform: translateX(-2px) translateY(-2px);
+    }
+}
+@keyframes button1 {
+    0% {
+        transform: translateX(-2px) translateY(-2px);
+    }
+
+    25% {
+        transform: translateX(2px) translateY(-2px);
+    }
+
+    50% {
+        transform: translateX(2px) translateY(2px);
+    }
+
+    75% {
+        transform: translateX(-2px) translateY(2px);
+    }
+
+    100% {
+        transform: translateX(-2px) translateY(-2px);
+    }
+}

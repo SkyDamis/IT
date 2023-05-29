@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Absolute Position</title>
+    <style>
+        body {
+            background-color: #222;
+            height: 2000px;
+        }     
+        .parent div {
+            width: 100px;
+            height: 100px;
+        }
+
+        .parent .child-1 {
+            background-color: #555;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 1;
+        }
+
+        .parent .child-2 {
+            background-color: #888;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 0;
+        }
+
+        .parent .child-3 {
+            background-color: #bbb;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child-1">1</div>
+        <div class="child-2">2</div>
+        <div class="child-3">3</div>
+    </div>
+</body>
+
+</html>

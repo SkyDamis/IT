@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal-window: pseudo + position</title>
+    <link rel="stylesheet" href="nr.11 modal-window.css">
+</head>
+<body>
+    <main id="content"> <!--also can use div or header instead of main-->>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, fugiat!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum omnis in dolorem.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, vel?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p class="ad"> To benefit from it hit <a href="#modal"><button id="button1">this button</button></a></p>
+    </main>
+    <div id="modal">
+        <h1>Apply for this product</h1>
+        <h2>In order to apply fill in the blank</h2>
+        <form>
+            <fieldset>
+                <legend>Personal data</legend>
+                <i>Full name:</i><br>
+                <input id="input1" type="text" required placeholder="e.g.: Bruce Wayne" class="full-name"><br>
+                <i>Cell-phone nr.:</i><br>
+                <select>
+                    <option>+373</option>
+                    <option>+474</option>
+                    <option>+001</option>
+                </select>
+                <input type="text" required placeholder="+373 999-99-999" class="phone-nr"><br>
+                <i>E-mail address</i>
+                <input id="input3" type="text" required placeholder="bruce@example.com" class="email">
+            </fieldset>
+            <b><i>I accept the terms and conditions</i></b>
+            <input type="checkbox" required>
+            <button class="button"><b>Apply!!!</b></button>
+        </form>
+        <a id="x" href="#">x</a>
+    </div>
+    <div class="overlay"></div>
+</body>
+</html>
