@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+</head>
+<body bgcolor="bisque">
+    <form action="Apply confirmation.html">
+        <h1 align="center">Apply for training</h1>
+        <fieldset>
+        <legend>Personal data</legend>
+        <i>Full name:</i> <input type="text" required pattern="[A-Z]{3}"><br>
+        <i>Cell-phone nr.:</i> <input type="text" required pattern="[0-9]{9}"><br>
+        </fieldset>
+        <fieldset>
+        <legend>Course selection</legend>
+        <i>Training options:</i>
+        <select>
+            <option>Bronze</option>
+            <option>Silver</option>
+            <option>Gold</option>
+        </select>
+        <br>
+        <i>Training hours:</i> <br>
+        -Morning:
+        <select>
+            <option>7am-9am</option>
+            <option>9am-11am</option>
+        </select><br>
+        -Evening:
+        <select>
+            <option>5pm-7pm</option>
+            <option>7pm-9pm</option>
+        </select> <br>
+        </fieldset>
+        <b><i>I accept the <a href="terms.html" target="_blank">terms</a> and conditions</i></b>
+        <input type="checkbox" required>
+        <br>
+        <hr>
+        <button>Apply</button>
+    </form>
+    </table>
+</body>
+</html>
