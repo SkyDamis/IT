@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DNA effect</title>
+    <style>
+        body {
+            background-color: #222;
+        }        
+        #dna {
+            width: 250px;
+            
+            margin: 80px auto;
+            perspective: 500px;
+        }
+        #dna .gene {
+            height: 25px;
+            border-left: 10px double #ccccff;
+            border-right: 10px double #ccccff;
+            border-bottom: 5px solid #6666ff;
+            background-color: #b3b3ff11;
+        }
+        #dna .gene::before {
+            content: "";
+            display: block;
+            width: 25px;
+            height: 25px;
+            background-color: #b3b3ff;
+            border-radius: 25px;
+            transform: translateY(15px) translateX(-17px);
+        }
+        #dna .gene::after {
+            content: "";
+            display: block;
+            width: 25px;
+            height: 25px;
+            background-color: #b3b3ff;
+            border-radius: 25px;
+            transform: translateY(-10px) translateX(222px);
+        }                
+        #dna .gene:nth-child(21) {
+            border-bottom: none;
+        }
+        #dna .gene:nth-child(1) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 0;
+        }
+        #dna .gene:nth-child(2) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 0.1s;
+        }
+        #dna .gene:nth-child(3) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 0.2s;
+        }
+        #dna .gene:nth-child(4) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 0.3s;
+        }
+        #dna .gene:nth-child(5) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 0.4s;
+        }
+        #dna .gene:nth-child(6) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 0.5s;
+        }
+        #dna .gene:nth-child(7) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 0.6s;
+        }
+        #dna .gene:nth-child(8) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 0.7s;
+        }
+        #dna .gene:nth-child(9) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 0.8s;
+        }
+        #dna .gene:nth-child(10) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 0.9s;
+        }
+        #dna .gene:nth-child(11) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 1s;
+        }
+        #dna .gene:nth-child(12) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 1.1s;
+        }
+        #dna .gene:nth-child(13) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 1.2s;
+        }
+        #dna .gene:nth-child(14) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 1.3s;
+        }
+        #dna .gene:nth-child(15) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 1.4s;
+        }
+        #dna .gene:nth-child(16) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 1.5s;
+        }
+        #dna .gene:nth-child(17) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 1.6s;
+        }
+        #dna .gene:nth-child(18) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 1.7s;
+        }
+        #dna .gene:nth-child(19) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 1.8s;
+        }
+        #dna .gene:nth-child(20) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 1.9s;
+        }
+        #dna .gene:nth-child(21) {
+            animation: rotateGene 5s infinite;
+            animation-delay: 2s;
+        }    
+        @keyframes rotateGene {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }           
+    </style>
+</head>
+<body>
+    <div id="dna">        
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+        <div class="gene"></div>
+    </div>
+</body>
+</html>

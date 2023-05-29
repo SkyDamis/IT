@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation toggle</title>
+    <style>
+        body {
+            background-color: bisque;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+        }
+        .menu-nav {
+            background-color: #345;
+            margin-left: -173px;
+            transition: 0.5s;
+            height: 228px;
+        }
+        .menu-nav:target {
+            margin-left: 0px;
+        }
+        .menu-title {
+            margin: 0;
+            padding: 20px 10px;
+            color: white;
+        }
+        .menu-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li:first-child {
+            border-top: 1px solid #567;
+        }
+        a {
+            text-decoration: none;
+            width: 150px;
+            padding: 5px 10px;
+            display: block;
+            color: #ddd;
+            border-bottom: 1px solid #567;
+        }
+        a:hover {
+            color: white;
+            background-color: #234;
+        }
+        a::before {
+            content: "✔";
+            padding-right: 10px;
+            color: green;
+        }
+        .unavailable::before{
+            content: "✘";
+            color: red;
+        }
+        .toggler::before {
+            display: none;
+        }
+        .toggler {
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+            background-color: brown;
+            border-radius: 30px;
+            text-align: center;
+            line-height: 50px;
+            margin-left: 25px;
+            transform: translateY(-111px) translateX(150px)
+        }        
+    </style>
+</head>
+<body>
+    <nav class="menu-nav" id="menu">
+        <h2 class="menu-title">Our Cuisine</h2>
+        <ul class="menu-list">
+            <li><a href="#">Salad</a></li>
+            <li><a href="#">Soup</a></li>
+            <li><a href="#">Pizza</a></li>
+            <li><a class="unavailable" href="#">Kebab</a></li>
+            <li><a href="#">Burger</a></li>
+        </ul>
+        <a href="#menu" class="toggler">Menu</a>
+    </nav>
+</body>
+</html>

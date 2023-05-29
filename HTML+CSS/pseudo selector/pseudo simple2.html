@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APP TAB example | Pseudo</title>
+    <style>
+        .tabs {
+            list-style: none;
+            padding: 10px;
+            margin: 20px;
+        }
+        .tab-item {
+            border: 1px solid #e6e6e6;
+            border-radius: 5%;
+            display: inline-block;
+            padding: 20px 10px;
+            margin: 20px;
+            text-align: center;
+            transition: 0.5s;
+            height: 90px;
+        }
+        .tab-item:hover {
+            background-color: #cccccc;
+        }
+        .tabs-img {
+            margin-bottom: 20px;
+        }
+        .tabs-link {
+            text-decoration: none;
+            color: #333;
+        }
+        .tab-options {
+            font-size: 30px;
+            line-height: 5px;
+            background-color: #999999;
+            height: 30px;
+            width: 30px;
+            border-radius: 25px;
+            opacity: 0.0;
+            transition: 0.5s;
+            transform: translateY(-100px) translateX(90px);
+        }
+        .tab-options:hover {
+            opacity: 1.0;
+        }
+    </style>
+</head>
+<body>
+    <ul class="tabs">
+        <li class="tab-item">
+            <a title="username" class="tabs-link" href="">
+                <img class="tabs-img" src="icons/git hub ico.png">
+                <br/>
+                username example
+            </a>
+            <div class="tab-options">.<br/>.<br/>.</div>
+        </li>
+        <li class="tab-item">
+            <a title="username" class="tabs-link" href="">
+                <img class="tabs-img" src="icons/insta ico.png">
+                <br />
+                username example
+            </a>
+            <div class="tab-options">.<br />.<br />.</div>
+        </li>
+        <li class="tab-item">
+            <a title="username" class="tabs-link" href="">
+                <img class="tabs-img" src="icons/utorrent ico.png">
+                <br />
+                username example
+            </a>
+            <div class="tab-options">.<br />.<br />.</div>
+        </li>
+    </ul>
+</body>
+</html>

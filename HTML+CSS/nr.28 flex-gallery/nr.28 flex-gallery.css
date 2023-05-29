@@ -1,0 +1,26 @@
+body{
+    background-color: #222;
+    margin: 0;
+}
+.container{
+    border: 1px solid wheat;
+    width: 700px;
+    height: 400px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container img{
+    width: 100px;
+    border: 5px solid wheat;
+}
+.container img:nth-child(1){
+    align-self: start;
+}
+.container img:nth-child(3){
+    align-self: end;
+}
+.container img:nth-child(5){
+    align-self: start;
+}

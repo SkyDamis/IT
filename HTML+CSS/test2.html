@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Business Card Example</title>
+    <style>
+        body {
+            background-color: bisque;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1
+        h2
+        p {
+            color: white;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            color: white;
+        }
+
+        #business-card {
+            background-color: #111;
+            width: 400px;
+            height: 200px;
+            margin: 50px;
+        }
+
+        #business-card .name {
+            display: inline-block;
+            border-right: 1px solid white;
+            height: 80px;
+            padding-top: 30px;
+            padding-right: 5px;
+            margin-left: 60px;
+            font-size: small;
+            text-align: right;
+        }
+
+        #business-card .info {
+            padding-top: -20px;
+            display: inline-block;
+            color: white;
+            font-size: smaller;
+        }
+
+        #business-card .name h1 {
+            color: white;
+        }
+
+        #business-card .name h2 {
+            color: rgb(139, 104, 14);
+        }
+
+        #business-card .name small {
+            color: #777;
+            font-size: smaller;
+        }
+
+        #business-card .info li {
+            color: #777;
+        }
+
+        #business-card .info li:before {
+            content: "☎";
+            color: rgb(139, 104, 14);
+        }
+        #business-card .info li:before>li::before {
+            content: "";
+        }
+    </style>
+</head>
+
+<body>
+    <div id="business-card">
+
+        <div class="name">
+            <h1>Firstname</h1>
+            <h2>Lastname</h2>
+            <small>web designer &#47; developer</small>
+        </div>
+        <div class="info">
+            <p>12345 Some Street, City<br>State, Province, Country</p>
+            <ul>
+                <li>+00 22 333444</li>
+                <li>email@somemail.example</li>
+                <li>www.exampledomain.example</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
