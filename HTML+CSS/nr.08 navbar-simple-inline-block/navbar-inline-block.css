@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background-color: #333;
+    font-family: Arial;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.navbar {
+    background-color: #222;
+    font-size: 25px;
+}
+.navbar a {
+    color: wheat;
+}
+.navbar ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+.navbar>ul>li {
+    display: inline-block;
+    padding: 20px 10px;
+    vertical-align: middle;
+}
+.navbar>ul.branding {
+    margin-right: 100px;
+    margin-left: 50px;
+}
+.navbar>ul.branding li:first-child {
+    font-size: 40px;
+}
+.navbar>ul.client {
+    margin-left: 1050px;
+}
