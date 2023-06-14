@@ -1,0 +1,21 @@
+body,figure,h2{
+    margin: 0;
+}
+.carousel {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 20px;
+}
+.carousel figcaption{
+    width: 100%;
+    text-align: center;
+    align-self: start;
+}
+.carousel h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+}
