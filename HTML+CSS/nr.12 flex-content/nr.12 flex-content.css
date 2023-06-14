@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2,h3 {
+    font-family: antonioregular;
+}
+figure{
+    margin: 0;
+}
+.news {
+    width: 80%;
+    margin: 20% auto;
+}
+.news h2 {
+    margin: calc(1em*24/18.7) 0;
+}
+.news h3{
+    margin: 1em 0;
+}
+.news header {
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+    margin-bottom: 3%;
+}
+.news header h1 {
+    font-size: 200%;
+}
+.news .articles {
+    display: flex;
+    justify-content: space-between;
+}
+.news article{
+    width: 25%;
+    border-bottom: 2px solid #999;
+    padding-bottom: 2%;
+    position: relative;
+}
+.news article figure{
+    border: 2px solid red;
+    height: 25em;
+    overflow: hidden;
+}
+.news article a{
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
+.news article:first-child {
+    width: 50%;
+    margin: 0 2%;
+}
+.news article:nth-child(2) {
+    order: -1;
+}
+.news img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

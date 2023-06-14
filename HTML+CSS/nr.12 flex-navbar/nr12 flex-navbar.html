@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar with FLEX</title>
+    <style>
+        body{
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .navbar ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #111;
+            display: flex;
+            justify-content: flex-start;
+        }
+        @media (max-width: 800px) {
+            .navbar ul{
+                flex-direction: column;
+            }
+        }
+        .navbar li{
+            padding: 0.5em;
+        }
+        .navbar .brand{
+            font-size: 30px;
+            margin: 0.5em;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="brand"><a href="">BRAND</a></li>
+            <li><a href="">Sit</a></li>
+            <li><a href="">Officiis</a></li>
+            <li><a href="">Laudantium</a></li>
+            <li><a href="">Dignissimos</a></li>
+            <li><a href="">Iusto!</a></li>
+            <li><a href="">Amet!</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
