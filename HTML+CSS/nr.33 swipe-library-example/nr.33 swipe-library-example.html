@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipe library example</title>
+    <link rel="stylesheet" href="nr.33 swipe-library-example.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+    <swiper-container class="mySwiper" navigation="true" pagination="true" effect="flip" grab-cursor="true" loop="true">
+        <swiper-slide class="swiper-slide">
+            <img src="images/1.jpg" />
+        </swiper-slide>
+        <swiper-slide class="swiper-slide">
+            <img src="images/2.jpg" />
+        </swiper-slide>
+        <swiper-slide class="swiper-slide">
+            <img src="images/3.jpg" />
+        </swiper-slide>
+    </swiper-container>
+    
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+</body>
+</html>

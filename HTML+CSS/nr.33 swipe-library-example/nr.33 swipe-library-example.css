@@ -1,0 +1,12 @@
+body {
+    background: #222;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    padding-top: 20vh;
+}
+swiper-container {
+    width: 400px;
+    height: 600px;
+    padding: 50px;
+}
