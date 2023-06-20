@@ -1,0 +1,63 @@
+$colorDark: #333;
+$colorLight: orange;
+$sizeW: 800px;
+$sizeH: 600px;
+$thickness: 5px;
+@mixin reset{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: $colorDark;
+    @include reset;
+}
+.carousel{
+    width: $sizeW;
+    height: $sizeH;
+    border: $thickness solid lighten($colorDark,10%);
+    .slide{
+        width: inherit;
+        height: inherit;
+        >div{
+            width: $sizeW / 8;
+            height: $sizeH / 6;
+            float: left;
+            background-image: url(beach.jpg);
+            @for $y from 0 through 5 {
+                @for $x from 0 through 7 {
+                    &:nth-child(#{$y * 8 + $x + 1}){
+                    background-position-x: $x * - $sizeW / 8;
+                    background-position-y: $y * - $sizeH / 6;
+                    //opacity: 0;
+                    //animation: effect-1 5s 1;
+                    //animation-fill-mode: forwards;
+                    //animation-delay: 0.5s * ($y + $x);
+                    transform: translateX(-2 * $sizeW) translateY(-2 * $sizeH) rotate(0);
+                    animation: effect-2 0.25s * random(5) 1;
+                    animation-fill-mode: forwards;
+                    animation-delay: 0.1s * random(10);
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes effect-1 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+@keyframes effect-2 {
+    from {
+        transform: translateX(-2 * $sizeW) translateY(-2 * $sizeH) rotate(-1800deg);
+    }
+
+    to {
+        transform: translateX(0) translateY(0) rotate(0);
+    }
+
+}

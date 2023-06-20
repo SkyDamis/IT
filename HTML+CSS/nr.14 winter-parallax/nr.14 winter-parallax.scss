@@ -1,0 +1,43 @@
+$flakeLayerColor: #234;
+$flakeColor: #457;
+$flakeSize: 10px;
+$fallDuration: 20s;
+body{
+    overflow: hidden;
+}
+.flake-layer{
+    background-color: $flakeLayerColor;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.flake {
+    
+    background-color: $flakeColor;
+    border-radius: $flakeSize;
+    position: absolute;
+    top: -$flakeSize * 2;
+    
+    animation: fall $fallDuration linear infinite;
+
+    @keyframes fall {
+        from{top: -$flakeSize * 2}
+        to{top:100%}
+    }
+    @for $n from 1 through 100 {
+        &:nth-child(#{$n}){
+            left: 1% * random(100);
+            animation-delay: $fallDuration * random();
+            $sizeK: 0.5 + random();
+            animation-duration: $fallDuration * 1 / $sizeK;            
+            width: $flakeSize * $sizeK;
+            height: $flakeSize * $sizeK;
+            background-color: lighten($flakeColor, $sizeK * 45%);
+        }
+    }
+    &:nth-child(1){
+        left: 1% * random(100);
+    }
+}

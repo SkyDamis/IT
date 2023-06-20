@@ -1,0 +1,57 @@
+body {
+  background-color: #334;
+  overflow: hidden;
+}
+
+.parallax-container {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  bottom: -30px;
+  left: 0;
+  height: 90vw;
+  perspective: 100px;
+  overflow: auto;
+}
+.parallax-container .layer {
+  font-size: 100px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.parallax-container .layer.layer-1 {
+  border: 2px dotted #123;
+  background-color: rgba(119, 136, 153, 0.5333333333);
+  transform: translateZ(-250px) scale(3.5);
+  z-index: -1;
+  margin: 30% 0;
+}
+.parallax-container .layer.layer-2 {
+  border: 2px dotted #123;
+  background-color: rgba(119, 136, 153, 0.5333333333);
+  transform: translateZ(-500px) scale(6);
+  z-index: -2;
+  margin: 15% 0;
+}
+.parallax-container .layer.layer-3 {
+  border: 2px dotted #123;
+  background-color: rgba(119, 136, 153, 0.5333333333);
+  transform: translateZ(-750px) scale(8.5);
+  z-index: -3;
+  margin: 10% 0;
+}
+.parallax-container .layer.layer-4 {
+  border: 2px dotted #123;
+  background-color: rgba(119, 136, 153, 0.5333333333);
+  transform: translateZ(-1000px) scale(11);
+  z-index: -4;
+  margin: 7.5% 0;
+}
+.parallax-container .layer.layer-5 {
+  border: 2px dotted #123;
+  background-color: rgba(119, 136, 153, 0.5333333333);
+  transform: translateZ(-1250px) scale(13.5);
+  z-index: -5;
+  margin: 6% 0;
+}/*# sourceMappingURL=nr.14 parallax.css.map */
