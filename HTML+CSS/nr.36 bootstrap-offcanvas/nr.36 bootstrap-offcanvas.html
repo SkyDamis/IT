@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offcanvas Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+<nav class="navbar
+     navbar-expand-lg
+     navbar-light
+     bg-light
+     justify-content-between">
+    <div class="container">
+        <a class="navbar-brand"><i class="bi bi-xbox"></i></a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-main-menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar-main-menu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-telephone-fill"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="">Lorem.</a></li>
+                <li class="nav-item"><a class="nav-link" href="">At!</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Consequatur!</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Ipsa!</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Sit.</a></li>
+            </ul>
+            
+            <ul class="navbar-nav">
+                <!--search field & logo-->
+                <div class="input-group flex-nowrap ">
+                    <span class="input-group-text" id="addon-wrapping"><a href="#" data-bs-toggle="modal"
+                            data-bs-target="#search-modal"><i class="bi bi-search"></i></a></span>
+                    <input type="text" class="form-control" placeholder="search" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+                <!--User logo-->
+                <li class="nav-item">
+                    <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#user-login-modal">
+                        <i class="bi bi-person-fill"></i>
+                    </a>
+                </li>
+                    <!--cart logo-->
+                    <button class="btn bnt-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart">
+                        <i class="bi bi-bag-fill"></i>
+                    </button>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--offcanvas-->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body flex-grow-0">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">name</th>
+                    <th scope="col">quantity</th>
+                    <th scope="col">total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Samsung</td>
+                    <td>x 2</td>
+                    <td>2000$</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Macbook M2 full silver 64GB</td>
+                    <td>x 1</td>
+                    <td>2500$</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td><b>TOTAL:</b></td>
+                    <td><b>x 3</b></td>
+                    <td><b>4500$</b></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="p-3 text-end">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#manage-items">Manage items <i class="bi bi-sliders2"></i></button>
+        <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#checkout-button">Checkout <i class="bi bi-arrow-right-square-fill"></i></button>
+    </div>
+</div>
+
+<!-- Modal 1 (accessing account form) -->
+<div class="modal fade" id="user-login-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="bi bi-person-fill"></i>Access your account
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ENTER<i
+                        class="bi bi-box-arrow-in-right"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 (manage items)-->
+<div class="modal fade" id="manage-items">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            
+            <div class="offcanvas-body flex-grow-0">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">name</th>
+                            <th scope="col">quantity</th>
+                            <th scope="col">total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Samsung</td>
+                            <td><a href="#"><i class="bi bi-dash-square-fill text-danger"></i></a> x 2 <a href="#"><i class="bi bi-plus-square-fill text-success"></i></a></td>
+                            <td>2000$ <a href="#"><i class="bi bi-trash3 text-secondary"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Macbook M2 full silver 64GB</td>
+                            <td><a href="#"><i class="bi bi-dash-square-fill text-danger"></i></a> x 1 <a href="#"><i class="bi bi-plus-square-fill text-success"></i></a></td>
+                            <td>2500$ <a href="#"><i class="bi bi-trash3 text-secondary"></i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td><b>TOTAL:</b></td>
+                            <td><b>x 3</b></td>
+                            <td><b>4500$</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">CONFIRM <i class="bi bi-check-square-fill"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 (checkout)-->
+<div class="modal fade" id="checkout-button">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="offcanvas-body flex-grow-0">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">name</th>
+                            <th scope="col">quantity</th>
+                            <th scope="col">total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Samsung</td>
+                            <td>x 2</td>
+                            <td>2000$</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Macbook M2 full silver 64GB</td>
+                            <td>x 1</td>
+                            <td>2500$</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td><b>TOTAL:</b></td>
+                            <td><b>x 3</b></td>
+                            <td><b>4500$</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Make purchase <i class="bi bi-cash-coin"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous">
+</script>
+</body>
+</html>
